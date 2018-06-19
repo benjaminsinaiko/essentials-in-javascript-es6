@@ -98,6 +98,7 @@
 // }
 // arrowPrint()
 
+// Map functions
 // let points = [10, 20, 30]
 
 // let addOne = element => {
@@ -109,10 +110,19 @@
 
 // console.log(points)
 
-let lengths = [3, 7, 5]
-let multiple = 8
+// let lengths = [3, 7, 5]
+// let multiple = 8
 
-const scale = multiple => {
-  return lengths.map(element => element * multiple)
-}
-console.log(scale(8))
+// const scale = multiple => {
+//   return lengths.map(element => element * multiple)
+// }
+// console.log(scale(8))
+
+// Filter functions
+// let isPassing = grade => {
+//   return grade >= 70
+// }
+
+let scores = [90, 85, 67, 71, 70, 55, 92]
+let passing = scores.filter(element => element >= 70)
+console.log(passing)
