@@ -65,6 +65,54 @@
 // let { magical, power } = ranger
 // console.log(magical, power)
 
-const lion = { size: 'large', sound: 'roar' }
-let { sound } = lion
-console.log(sound)
+// const lion = { size: 'large', sound: 'roar' }
+// let { sound } = lion
+// console.log(sound)
+
+// SECTION 5
+// Arrow functions
+
+// function blastoff() {
+//   console.log('3...2...1... blastoff!')
+// }
+
+// setTimeout(() => {
+//   console.log('3...2...1... blastoff!')
+// }, 1000)
+
+// const blastoff = () => {
+//   console.log('3...2...1... blastoff!')
+// }
+// blastoff()
+
+// this.a = 25
+
+// let print = function() {
+//   this.a = 50
+//   console.log('this.a', this.a)
+// }
+// print()
+
+// let arrowPrint = () => {
+//   console.log('this.a in arrowPrint', this.a)
+// }
+// arrowPrint()
+
+// let points = [10, 20, 30]
+
+// let addOne = element => {
+//   return element + 1
+// }
+// points = points.map(addOne)
+
+// points = points.map(element => element + 1)
+
+// console.log(points)
+
+let lengths = [3, 7, 5]
+let multiple = 8
+
+const scale = multiple => {
+  return lengths.map(element => element * multiple)
+}
+console.log(scale(8))
