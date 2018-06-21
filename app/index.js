@@ -20,17 +20,31 @@
 // SECTION 7
 // OOP classes
 
-import Entity from './entity'
+// import Entity from './entity'
 
-class Hobbit extends Entity {
-  constructor(name, height) {
-    super(name, height)
-  }
+// class Hobbit extends Entity {
+//   constructor(name, height) {
+//     super(name, height)
+//   }
 
-  greet() {
-    console.log(`Hello! I'm ${this.name} from the Shire!`)
+//   greet() {
+//     console.log(`Hello! I'm ${this.name} from the Shire!`)
+//   }
+// }
+// let Frodo = new Hobbit('Frodo Baggins', 4.5)
+// console.log(Frodo)
+// Frodo.greet()
+
+// SECTION 8
+// JSX
+
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+
+class App extends Component {
+  render() {
+    return <div>React JS and JSX in action!</div>
   }
 }
-let Frodo = new Hobbit('Frodo Baggins', 4.5)
-console.log(Frodo)
-Frodo.greet()
+
+ReactDOM.render(<App />, document.getElementById('root'))
