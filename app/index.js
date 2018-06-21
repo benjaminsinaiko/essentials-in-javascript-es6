@@ -20,16 +20,17 @@
 // SECTION 7
 // OOP classes
 
-class Entity {
+import Entity from './entity'
+
+class Hobbit extends Entity {
   constructor(name, height) {
-    this.name = name
-    this.height = height
+    super(name, height)
   }
 
   greet() {
-    console.log(`Hi! I'm ${this.name} from middle earth!`)
+    console.log(`Hello! I'm ${this.name} from the Shire!`)
   }
 }
-
-let Merry = new Entity('Merry', 4.6)
-Merry.greet()
+let Frodo = new Hobbit('Frodo Baggins', 4.5)
+console.log(Frodo)
+Frodo.greet()
